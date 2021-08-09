@@ -8,7 +8,7 @@ const ERROR_IMG = [
 if (file_exists('../url.csv')) {
     $url = file('../url.csv', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 } else {
-    $url = file('http://' . $_SERVER['HTTP_HOST'] . '/url.csv', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $url = file('https://raw.githubusercontent.com/codingbox/pixiv/main/url.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 }
 
 if (empty($url[0])) {
