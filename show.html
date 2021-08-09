@@ -73,7 +73,7 @@
         </footer>
 
         <script>
-            $.get('./url.csv', function (data) {
+            $.get('https://cdn.jsdelivr.net/gh/codingbox/pixiv@latest/url.txt', function (data) {
                 let html = '';
                 document.getElementById('output').innerHTML = '';
                 data.split(/\r\n|\r|\n/)
