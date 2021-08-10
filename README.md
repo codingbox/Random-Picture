@@ -1,1 +1,1 @@
-用于 [pixiv 爬虫](https://github.com/codingbox/pixiv) 的随机图片 API.
+用于 [Pixiv 爬虫](https://github.com/codingbox/Pixiv-Craw) 的随机图片 API.
