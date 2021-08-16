@@ -5,111 +5,11 @@
 			Pixiv 随机图片
 		</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="dns-prefetch" href="https://cdn.jsdelivr.net/" />
-		<link rel="preload" href="https://cdn.jsdelivr.net/gh/kylelogue/mustard-ui/dist/css/mustard-ui.min.css"
-		as="style" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kylelogue/mustard-ui/dist/css/mustard-ui.min.css"
-		/>
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js">
-		</script>
-		<script>
-			$(document).ready(function() {
-				$('.scroll-down, .get-started').on('click',
-				function(e) {
-					e.preventDefault();
-					$('html, body').animate({
-						scrollTop: $('section:first-of-type').offset().top,
-					},
-					300, );
-				});
-			});
-		</script>
-		<style>
-			header { background: #a0e5e4; } .get-started { background: #43ccc8; border:
-			3px solid #50d0cc; }
-		</style>
 	</head>
 	<body>
-		<header>
-			<h1 class="title">
-				Pixiv 随机图片
-			</h1>
-			<a class="scroll-down" href="#">
-			</a>
-		</header>
-		<section>
-			<h3>
-				<strong>
-					直接调用
-				</strong>
-			</h3>
-			<h5>
-				<strong>
-					默认：跳转图片地址 
-					<a href="./api">
-						/api
-					</a>
-				</strong>
-			</h5>
-			<h5>
-				<strong>
-					跳转指定图片 
-					<a href="./api?id=num">
-						/api
-					</a>
-				</strong>
-			</h5>
-		</section>
 		<div align="center">
 			<img src="./api" width=600px alt="随机图 Demo" />
 		</div>
-		<section>
-			<h5>
-				<strong>
-					访问 
-					<a href="./api/?type=length">
-						./api/?type=length
-					</a>
-				</strong>
-			</h5>
-			<p>
-				返回图片总量，即 id 的最大值
-			</p>
-		</section>
-		<section>
-			<h5>
-				<strong>
-					访问 
-					<a href="./api/?type=output">
-						./api/?type=output
-					</a>
-				</strong>
-			</h5>
-			<p>
-				服务器读取后输出，为防止超出流量限额，已关闭
-			</p>
-		</section>
-		<section>
-			<h5>
-				<strong>
-					图片合集 
-					<a href="./show.html">
-						./show.html
-					</a>
-				</strong>
-			</h5>
-			<p>
-				API 测试
-			</p>
-		</section>
-		<footer>
-			<p class="copyright align-center">
-				<a href="https://github.com/codingbox/Random-Picture">
-					Github
-				</a>
-			</p>
-		</footer>
 	</body>
 
 </html>
